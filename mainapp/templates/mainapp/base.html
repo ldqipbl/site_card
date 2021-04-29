@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width">
+	{% block title %}
+		<title></title>
+	{% endblock %}
+	<link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+
+	{% block css %}{% endblock %}
+	{% block js %}{% endblock %}
+
+</head>
+<body>
+	<body>
+		<div class="wrapper">
+
+			{% block header %}
+				<header>
+					<div class="conteiner">
+						<div class="header__divLeft">
+							<div>
+								<img class="MainImg_img" src="{% static 'img/gay_fox.jpg' %}" alt="avatar">
+								<p>Константин</p>
+							</div>
+						</div>
+						<div class="header__divRight">
+							<div class="header__divRight__Vipodashca">
+								<p><a href="/resume/">Мои контакты</a></p>
+								<div class="header__divRight-info">
+									<ul>
+										<li class="telephone">телефон</li>
+										<li class="mail">@mail</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+			{% endblock %}
+
+			{% block section %}{% endblock %}
+
+		</div>
+
+		{% block footer %}
+			<footer>
+				<div class="conteiner clierfix">
+					<div>
+						<p class="copipast">&copy;Дизайн сайта был разработан в школе LoftSchool</p>
+					</div>
+					<div>
+						<ul class="header__divRight__Vipodashca">
+							<a href="https://www.facebook.com/"><li class="FaceBook"></li></a>
+							<a href="https://vk.com/"><li class="vk"></li></a>
+							<a href="https://twitter.com/"><li class="Twitter"></li></a>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		{% endblock %}
+</body>
+</html>

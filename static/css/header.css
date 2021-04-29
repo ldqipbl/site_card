@@ -1,0 +1,52 @@
+header{
+	background-color: #ffffff;
+}
+header{
+	padding: 15px 10px;
+	box-shadow: 0 0 1px #727272;
+}
+header div{
+	height: 50px;
+}
+header img{
+	float: left;
+	margin: -15px 20px 0 0;
+}
+header a{
+	color: #33c1e3;
+	border-bottom: 2px dotted;
+}
+.MainImg_img{
+        border-radius: 50%;
+}
+img{
+        max-width: 100%;
+        max-height: 100%;
+}
+.header__divRight__Vipodashca{
+	float: right;
+	width: 150px;
+}
+.header__divRight__Vipodashca p {
+	margin-bottom: 25px;
+}
+.header__divRight-info{
+	display: none;
+	position: relative;
+}
+.header__divRight-info li {
+	padding-left: 25px;
+	margin: 5px;
+}
+.telephone {
+	background: url(/static/img/telephone.png) no-repeat left center;	
+}
+.mail {
+	background: url(/static/img/mail.png) no-repeat left center;
+}
+.header__divRight__Vipodashca:hover a{
+	color: #e85f61;
+}
+.header__divRight__Vipodashca:hover .header__divRight-info{
+	display: block;
+}

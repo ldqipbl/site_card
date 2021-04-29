@@ -1,0 +1,63 @@
+.wrapper {
+	width: 100%;
+	margin: auto;
+	background-color: #f6f6f6;
+	color: #414141;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.conteiner {
+	width: 300px;
+	margin: 10% auto;
+	background-color: #fff;
+	text-align: center;
+}
+a {
+        text-decoration: none;
+}
+
+
+
+.MainImg {
+	margin-left: 25%;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+}
+.MainImg_img {
+        border-radius: 50%;
+}
+img{
+        max-width: 100%;
+        max-height: 100%;
+}
+
+.name p {
+	font-size: 21px;
+	line-height: 28px;
+	font-weight: 600;
+}
+
+
+.index__button {
+	background-color: #33c1e3;
+	border-radius: 0 0 10px 10px;
+}
+button {
+	color: #fff;
+	width: 138px;
+	height: 40px;
+	border: 2px solid #fff;
+	border-radius: 20px;
+	margin: 10px;
+	background-color: #33c1e3;
+}
+.index__button button:hover {
+	background-color: #fff;
+	color: #33c1e3;
+}
+
+
+
+
+

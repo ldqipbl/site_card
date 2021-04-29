@@ -1,0 +1,44 @@
+footer .conteiner{
+	clear: both;
+}
+footer li{
+	display: inline-block;
+}
+footer{
+	background: #414141;
+	color:  #727272;
+}
+.header__divRight__Vipodashca{
+	margin: 8px 5px 0 0;
+
+}
+.vk{
+ 	background: url(/static/img/vk.png) no-repeat left center;
+ 	width: 33px;
+ 	height: 33px;
+}
+.vk:hover{
+ 	background: url(/static/img/vk_hover.png) no-repeat left center;
+ 	width: 33px;
+ 	height: 33px;
+}
+.Twitter{
+ 	background: url(/static/img/twitter.png) no-repeat left center;
+ 	width: 33px;
+ 	height: 33px;
+ }
+.Twitter:hover{
+ 	background: url(/static/img/twitter_hover.png) no-repeat left center;
+ 	width: 33px;
+ 	height: 33px;
+}
+.FaceBook{
+ 	background: url(/static/img/facebook.png) no-repeat left center;
+ 	width: 33px;
+ 	height: 33px;
+}
+.FaceBook:hover{
+ 	background: url(/static/img/facebook_hover.png) no-repeat left center;
+ 	width: 33px;
+ 	height: 33px;
+}

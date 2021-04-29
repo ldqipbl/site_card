@@ -1,0 +1,75 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+
+{% block title %}
+	<title>Обо мне</title>
+{% endblock %}
+
+{% block css %}
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/header.css' %}">
+	<link rel="stylesheet" href="{% static 'css/section.css' %}">
+	<link rel="stylesheet" href="{% static 'css/footer.css' %}">
+{% endblock %}
+
+{% block section %}
+	<section>
+		<div class="conteiner clierfix">
+
+			{% include 'mainapp/include/inc_menu.html' %}
+
+			<div class="main">
+				<h1 class="about_me__main_h1">Обо мне</h1>
+				<div>
+					<div class="MainImg">
+						<img class="MainImg_img" src="{% static 'img/gay_fox.jpg' %}" alt="photo">
+					</div>
+					<div class="mainContent">
+						<div class="content">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								Doloremque nostrum modi dolorem placeat quos, nisi minima, 
+								tempora rem tenetur fuga impedit temporibus est earum, 
+								facilis nihil laborum provident accusantium natus.
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								Voluptas molestias, deleniti fuga magni repudiandae laboriosam error, 
+								aperiam iure, ex eligendi libero itaque quae alias inventore. 
+								Expedita unde ipsam corrupti distinctio.
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								Consectetur dolorem eos, est, repudiandae cumque iusto enim itaque, 
+								aspernatur magnam alias dolores. Magni reiciendis eius eos, 
+								voluptate natus, cum saepe omnis.
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								Doloremque nostrum modi dolorem placeat quos, nisi minima, 
+								tempora rem tenetur fuga impedit temporibus est earum, 
+								facilis nihil laborum provident accusantium natus.
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								Voluptas molestias, deleniti fuga magni repudiandae laboriosam error, 
+								aperiam iure, ex eligendi libero itaque quae alias inventore. 
+								Expedita unde ipsam corrupti distinctio.
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								Consectetur dolorem eos, est, repudiandae cumque iusto enim itaque, 
+								aspernatur magnam alias dolores. 
+								Magni reiciendis eius eos, voluptate natus, cum saepe omnis.
+							</p>
+						</div>
+						<div class="mainContent_Ssilka">
+							<a href="/resume/" download>скачать резюме</a>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</section>	
+{% endblock %}

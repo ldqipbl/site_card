@@ -1,0 +1,48 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+
+{% block title %}
+	<title>Карьера</title>
+{% endblock %}
+
+{% block css %}
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/header.css' %}">
+	<link rel="stylesheet" href="{% static 'css/sectionCorera.css' %}">
+	<link rel="stylesheet" href="{% static 'css/footer.css' %}">
+{% endblock %}
+
+{% block section %}
+	<section>
+		<div class="conteiner clierfix">
+
+			{% include 'mainapp/include/inc_menu.html' %}
+
+			<div class="main">
+				<h1 class="Corera__main_h1">Карьерный путь</h1>
+				<div>
+					<div class="MainImg">
+						<img class="MainImg__imgCorera" src="{% static 'img/career_big_img.png' %}" alt="photo">
+					</div>
+					<div class="mainContent">
+						<div class="content">
+
+							{% for career_path in career_paths %}
+								<div class="Corera__mainContent__style">
+									<div class="Corera__mainContent__data">{{ career_path.date }}</div>
+									<div class="content__tochca"></div>
+									<div class="Corera__mainContent__info">
+										<p>{{ career_path.name_info }}</p>
+										<p>{{ career_path.discription_info }}</p>
+									</div>
+								</div>
+							{% endfor %}
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}			

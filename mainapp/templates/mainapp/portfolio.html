@@ -1,0 +1,49 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+
+{% block title %}
+        <title>Портфолио</title>
+{% endblock %}
+
+{% block css %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/header.css' %}">
+        <link rel="stylesheet" href="{% static 'css/sectionPortfolio.css' %}">
+        <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+{% endblock %}
+
+{% block section %}
+	<section>
+		<div class="conteiner clierfix">
+
+			{% include 'mainapp/include/inc_menu.html' %}
+
+			<div class="main">
+				<h1>Портфолио</h1>
+				<div>
+
+					{% for portfolio_project in portfolio_projects %}
+						<div class="Main_project">
+							<img class="Main_project__img" src="/media/{{ portfolio_project.img_project }}" alt="photo">
+							<div class="Main_project__info">
+								<div class="name_sait">
+									<a href="">{{ portfolio_project.name_project }}</a>
+								</div>
+								<div class="sort_of_activity">
+									{{ portfolio_project.discription_project }}
+								</div>
+								<div class="platform">
+									<img src="/media/{{ portfolio_project.img_platform }}">
+									{{ portfolio_project.platform }}
+								</div>
+							</div>
+						</div>
+					{% endfor %}
+
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}
+

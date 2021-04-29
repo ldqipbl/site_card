@@ -1,0 +1,62 @@
+.mainContent .content{
+	height: 320px;
+	overflow: auto;
+}
+.MainImg{
+	float: left;
+	margin: 20px;
+	width: 35%;
+	width: 220px;
+	height: 220px;
+	overflow: hidden;
+}
+
+/*.MainImg_img{
+	border-radius: 50%;
+}
+img{
+	max-width: 100%;
+	max-height: 100%;
+}*/
+
+.mainContent{
+	margin-left: 5px; 
+	float: left;
+	width: 52%;
+}
+section .MainImg_img{
+	width: 220px;
+	height: 220px;
+}
+section .main{
+	width: 724px;
+	height: 545px;
+}
+.main h1{
+	margin-top: 0;
+	margin-bottom: 22px;
+	font-size: 30px;
+	margin-left: 20px;
+}
+.main .content{
+	height: 320px;
+	margin-bottom: 55px;
+}
+.mainContent_Ssilka{
+	float: right;
+	border-radius: 20px;
+	border: 2px solid #e85f61;
+	padding: 9px;
+}
+.mainContent_Ssilka:hover{
+	background-color: #e85f61;
+}
+.mainContent_Ssilka a{
+	color: #e85f61;
+	background: url(/static/img/Ssilca.png) no-repeat left center;
+	padding-left: 15px;
+}
+.mainContent_Ssilka:hover a{
+        color: #fff;
+	background: url(/static/img/Ssilka_hower.png) no-repeat #e85f61 left;
+}

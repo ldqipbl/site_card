@@ -1,0 +1,96 @@
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
+.wrapper{
+	width: 100%;
+	margin: auto;
+	background-color: #f6f6f6;
+	color: #414141;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.conteiner{
+	width: 940px;
+	margin: 0 auto;
+}
+.conteiner > div{
+	float: left;
+	width: 50%;
+}
+a{
+	text-decoration: none;
+}
+.clierfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+ul, li{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style-type: none;
+}
+
+
+section{
+        margin-top: 25px;
+}
+.asib a{
+        color: #414141;
+}
+.asib li{
+        text-align: right;
+        list-style-type: none;
+        padding: 15px 25px;
+        display: inline-block
+}
+.asibPortfolio{
+        background: url(/static/img/asibPortfolio.png) no-repeat left center;
+        width: 100px;
+        margin-left: 55px;
+}
+.asibPortfolio:hover{
+        background: url(/static/img/asibPortfolio_hover.png) no-repeat left center;
+        width: 100px;
+        margin-left: 45px;
+}
+.asibOboMne{
+        background: url(/static/img/about_me.png) no-repeat left center;
+        width: 80px;
+        margin-left: 75px;
+}
+.asibOboMne:hover{
+        background: url(/static/img/about_me_hover.png) no-repeat left center;
+        width: 80px;
+        margin-left: 65px;
+}
+.asibCorera{
+        background: url(/static/img/career.png) no-repeat left center;
+        width: 140px;
+        margin-left: 15px;
+}
+.asibCorera:hover{
+        background: url(/static/img/career_hover.png) no-repeat left center;
+        width: 140px;
+        margin-left: 5px;
+}
+.asib li:hover{
+        color: #33c1e3;
+}
+.asib li:active{
+        color: #33c1e3;
+        padding-right: 26px;
+        border-right: 6px solid;
+}
+.asib ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+}
+section .asib{
+        width: 216px;
+}

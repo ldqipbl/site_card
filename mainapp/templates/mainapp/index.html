@@ -1,0 +1,27 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+
+{% block title %}
+	<title>Главная</title>
+{% endblock %}
+
+{% block css %}
+		<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+{% block header %}
+			<div class="conteiner">
+				<div class="MainImg">
+					<img class="MainImg_img" src="{% static 'img/gay_fox.jpg' %}" alt="photo">
+				</div>
+				<div class="name">
+					<p>Кузнецов <br> Константин</p>
+				</div>
+				<div class="index__button">
+					<a href="/about_me/"><button>Перейти на сайт</button></a>
+				</div>
+			</div>
+{% endblock %}
+
+{% block footer %}{% endblock %}
